@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt | Kochwelt</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+
+
+  <script src="script/script.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="img/logo_small.png" />
+
+</head>
+
+
+
+<body onload="includeHTML()">
+  <div w3-include-html="templates/header.html"></div>
+
+  <main class="main_kontakt padding-left-right">
+
+    <!-- modify this form HTML and place wherever you want your form -->
+    <div class="kontakt_container">
+      <h1>Wir haben dieses Kontaktformular für Dich eingerichtet...</h1>
+      <p> ...damit Du nicht nur Rezepte kommentieren, sondern
+        auch Deine eigenen kulinarischen Ideen und Kreationen mit unserer wachsenden Kochgemeinschaft teilen kannst.
+        </strong><br><br>
+
+        Deine Ideen und Beiträge tragen dazu bei, unsere Kochwelt-Community zu bereichern, und inspirieren andere
+        Hobbyköche
+        zu neuen kulinarischen Abenteuern. Vielen Dank, dass Du Teil dieser schmackhaften Reise bist!</p><br><br>
+      <form onsubmit="sendMail(event)">
+        <label>
+          Deine E-Mail-Adresse:<br />
+          <input type="email" name="email" required/>
+        </label>
+        <label>
+          <br />Deine Nachricht:<br />
+          <textarea class="message" name="message" required></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button class="button" type="submit">Abschicken</button>
+      </form>
+    </div>
+
+    <div class="editor narrow">
+      
+      <div class="profile_contact"><img src="img/profile.jpg" alt="" class="profile_contact">
+        <p>Axel</p></div>
+      <div class="profile_contact"><img src="img/Felix.jpg" alt="" class="profile_contact">
+        <p>Felix</p></div>
+      <div class="profile_contact"><img src="img/profile_marton.png" alt="" class="profile_contact">
+        <p>Márton</p></div>
+  </div>
+
+
+
+  </main>
+
+  <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

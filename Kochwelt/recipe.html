@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezept des Tages | Kochwelt</title>
+  <link rel="icon" type="image/x-icon" href="img/logo_small.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+
+  <link rel="icon" type="image/x-icon" href="img/logo_small.png" />
+</head>
+
+<body onload="includeHTML()">
+  <div w3-include-html="templates/header.html"></div>
+  <main class="recipe_main padding-left-right">
+    <h1>Rosenkohl-Gnocchi-Pfanne</h1>
+
+    <img class="main-img img_border8" src="img/gnocchi.jpg" alt="plate with gnocchi and brussels sprouts" />
+
+    <div id="filters">
+      <div class="box">
+        <img src="img/icons/clock-regular.svg" alt="icon clock" />
+        <p>25 Min.</p>
+      </div>
+      <div class="box">
+        <img src="img/icons/brain-solid.svg" alt="icon brain" />
+        <p>normal</p>
+      </div>
+      <div class="box">
+        <img src="img/icons/calendar-alt-regular.svg" alt="icon calendar" />
+        <p>06.03.2024</p>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="ingredients">
+      <p>Zutaten für</p>
+      <input type="number" min="1" max="10" id="portions" value="1" />
+      <button class="button" onclick="calc()">Portionen</button>
+
+
+
+    </div>
+
+    <table id="table">
+      <tr>
+        <td><span id="value1">200</span> g Rosenkohl, TK</td>
+      </tr>
+      <tr>
+        <td><span id="value2">200</span> g Gnocchi, frisch</td>
+      </tr>
+      <tr>
+        <td><span id="value3">75</span> g Kochschinken</td>
+      </tr>
+      <tr>
+        <td><span id="value4">25</span> g Parmesan am Stück</td>
+      </tr>
+      <tr>
+        <td><span id="value5">0.5</span> Stiele Rosmarin</td>
+      </tr>
+      <tr>
+        <td><span id="value6">1.5</span> Stiele Petersilie</td>
+      </tr>
+      <tr>
+        <td><span id="value7">1</span> EL Walnusskerne</td>
+      </tr>
+      <tr>
+        <td><span id="value8">1.5</span> EL Crème Fraîche</td>
+      </tr>
+      <tr>
+        <td><span id="value9">1</span> EL Butter</td>
+      </tr>
+      <tr>
+        <td>etwas Meersalz aus der Mühle</td>
+      </tr>
+      <tr>
+        <td>etwas Pfeffer, grüner aus der Mühle</td>
+      </tr>
+      <tr>
+        <td>etwas Muskatnuss</td>
+      </tr>
+    </table>
+
+    <h2>Zubereitung</h2>
+
+    <div id="filters">
+      <div class="box">
+        <img src="img/icons/clock-regular.svg" alt="icon clock" />
+        <p>25 Min.</p>
+      </div>
+      <div class="box">
+        <img src="img/icons/clock-regular.svg" alt="icon clock" />
+        <p>Gesamtzeit ca. 40 Min.</p>
+      </div>
+    </div>
+
+    <div>
+      <p>
+        Den Parmesan von der Rinde befreien und grob raspeln. Rosmarin waschen
+        und trocken schleudern, die Nadeln fein hacken. Den Kochschinken in
+        grobe Stücke oder Streifen schneiden. Petersilie waschen, trocken
+        schleudern und die Blätter grob hacken. Die Walnusskerne grob hacken,
+        in einer Pfanne ohne Fett rösten und abkühlen lassen. Den Rosenkohl
+        nur leicht antauen lassen und dann in kochendem Salzwasser etwa 5
+        Minuten garen.
+
+        <br /><br />Butter in der Pfanne erhitzen, Gnocchi und Rosmarin darin
+        bei mittlerer Hitze unter häufigem Wenden etwa 10 Minuten braten.
+        Rosenkohl abgießen und gut abtropfen lassen. Dann den Rosenkohl und
+        den Kochschinken zu den Gnocchi in die Pfanne geben und alles noch
+        etwa 5 Minuten weiter braten, mit Salz, Pfeffer und Muskat
+        abschmecken. Crème fraîche, die Hälfte vom Parmesan und die Nüsse
+        unter die Gnocchipfanne heben.
+
+        <br /><br />Alles auf Tellern anrichten, den Rest Parmesan und die
+        Petersilie darüber streuen und sofort servieren.
+      </p>
+    </div>
+
+    <h3>Rezept erstellt von</h3>
+
+    <div class="editor">
+      <img src="img/profile.jpg" alt="" class="profile" />
+      <p>Axel</p>
+    </div>
+
+    <p>
+      <em>Du hast Fragen oder Anregungen zum Rezept? Dann freuen wir uns auf
+        Dein Feedback.</em>
+    </p>
+
+    <a class="button buttoncontact new " href="contact.html">Kontaktiere uns! <img src="img/plane.svg"
+        alt="icon paper plane" /></a>
+  </main>
+  <div w3-include-html="templates/footer.html"></div>
+  <script src="script/script.js"></script>
+</body>
+
+</html>

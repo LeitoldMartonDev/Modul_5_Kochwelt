@@ -1,0 +1,373 @@
+/* STYLE.CSS */
+
+@media(max-width: 1450px) {
+    .idea_details {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .idea_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tipp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tipp p {
+        text-align: center;
+    }
+}
+
+/* HEADER-STYLE.CSS */
+
+
+
+@media(max-width: 1050px) {
+    .daily_offer {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .daily_right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .daily_img {
+        width: auto;
+    }
+
+    .recipes {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+}
+
+@media(max-width:870px) {
+    .sendmail_body {
+        font-size: 30px;
+        gap: 20px;
+    }
+}
+
+/* FOOTER-STYLE.CSS */
+
+
+@media(min-width:1920px) {
+    footer {
+        height: 300px;
+    }
+}
+
+
+
+@media(max-width: 800px) {
+    footer {
+        flex-direction: column;
+        gap: 50px;
+        padding: 40px 50px;
+    }
+
+    .footer_right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_logo {
+        height: auto;
+        width: 200px;
+    }
+
+    .footer_center {
+        height: 1px;
+        width: 100px;
+    }
+
+    .footer_left {
+        width: auto;
+    }
+
+    .imp {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .kontakt_container {
+        text-align: center;
+
+    }
+
+    .recipe_main {
+        text-align: center;
+    }
+
+    #filters {
+        justify-content: center;
+    }
+
+    .ingredients {
+        justify-content: center;
+    }
+
+    .editor {
+        justify-content: center;
+    }
+
+    .buttoncontact {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .recipe_container {
+        text-align: center;
+    }
+
+
+
+}
+
+/* RECIPE-STYLE.CSS */
+
+@media(max-width: 700px) {
+
+    .idea_container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .recipe_container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+}
+
+
+@media (max-width: 670px) {
+
+
+    .paper_plane {
+        width: 100px;
+    }
+
+
+}
+
+@media(max-width: 500px) {
+
+
+    .daily_right {
+        align-items: center;
+    }
+
+    .recipes {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .idea_details {
+
+        text-align: center;
+    }
+
+    .kontakt_container {
+        margin: 0px;
+    }
+
+    .sendmail_body {
+        font-size: 20px;
+        gap: 15px;
+    }
+
+    .paper_plane {
+        width: 75px;
+    }
+
+    .editor {
+        flex-direction: column;
+
+    }
+}
+
+
+
+@media(max-width: 450px) {
+    .box {
+        flex-direction: column;
+    }
+
+    #portions {
+        width: 45px;
+    }
+}
+
+
+
+
+
+
+.hamburger-menu {
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .hamburger-menu {
+        display: inline;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        left: 0 !important;
+    }
+
+    .menu__btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        transition-duration: .25s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: #ECEFF1;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .25s;
+    }
+
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+}
+
+
+
+/* CONTACT-STYLE.CSS */
+
+@media(min-width:1000px) {
+    .kontakt_container {
+        max-width: 800px;
+        /* text-align: center; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .narrow {
+        max-width: 800px;
+        justify-content: center !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:300px) {
+    .new {
+        flex-direction: column;
+        height: auto;
+        width: auto !important;
+    }
+}
+
+@media(max-width:300px) {
+    .footer_right {
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .padding-left-right {
+        padding-left: max(190px, calc(50% - 770px));
+        padding-right: max(190px, calc(50% - 770px));
+    }
+}
+
+/* IMPRINT-STYLE.CSS */
+
+/* MAIL.CSS */

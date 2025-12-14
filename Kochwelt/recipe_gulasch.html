@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezept des Tages | Kochwelt</title>
+  <link rel="icon" type="image/x-icon" href="img/logo_small.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body onload="includeHTML()">
+  <div w3-include-html="templates/header.html"></div>
+  <main class="recipe_main padding-left-right">
+    <h1>Gulaschsuppe</h1>
+
+    <img class="main-img img_border8" src="img/gulash.jpg" alt="Rezept bild Gulasch" />
+
+    <div id="filters">
+      <div class="box">
+        <img src="img/icons/clock-regular.svg" alt="icon clock" />
+        <p>15 Min.</p>
+      </div>
+      <div class="box">
+        <img src="img/icons/brain-solid.svg" alt="icon brain" />
+        <p>normal</p>
+      </div>
+      <div class="box">
+        <img src="img/icons/calendar-alt-regular.svg" alt="icon calendar" />
+        <p>10.03.2024</p>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="ingredients">
+      <p>Zutaten für</p>
+      <input type="number" min="1" max="10" id="portions" value="1" />
+      <button class="button" onclick="calc()">Portionen</button>
+    </div>
+
+    <table id="table">
+      <tr>
+        <td><span id="value1">30</span> dkg Rinderhaxen</td>
+      </tr>
+      <tr>
+        <td><span id="value2">15</span> dkg Zwiebeln</td>
+      </tr>
+      <tr>
+        <td><span id="value3">1</span> großes Stück Mohrrüben</td>
+      </tr>
+      <tr>
+        <td><span id="value4">0.5</span> großes Stück Rüben</td>
+      </tr>
+      <tr>
+        <td><span id="value5">20</span> dkg Erdäpfel (geputzt)</td>
+      </tr>
+      <tr>
+        <td><span id="value6">0.25</span> EL süßer Kräuterpaprika</td>
+      </tr>
+      <tr>
+        <td><span id="value7">0.25</span> EL scharfer Kräuterpaprika</td>
+      </tr>
+      <tr>
+        <td><span id="value8">0.5</span> EL Salz</td>
+      </tr>
+      <tr>
+        <td><span id="value9">0.5</span> TL gemahlener Kreuzkümmel</td>
+      </tr>
+      <tr>
+        <td><span id="value10">1</span> ST Lorbeerblätter</td>
+      </tr>
+      <tr>
+        <td><span id="value11">0.5</span> TL schwarzer Pfeffer</td>
+      </tr>
+      <tr>
+        <td><span id="value12">0.5</span> kleines Stück Paradeiser</td>
+      </tr>
+      <tr>
+        <td><span id="value13">0.5</span> ST Paprika</td>
+      </tr>
+      <tr>
+        <td><span id="value14">1.5</span> ST Knoblauchzehe</td>
+      </tr>
+      <tr>
+        <td><span id="value15">1</span> EL Schweineschmalz</td>
+      </tr>
+      <tr>
+        <td><span id="value16">0.25</span> Stiele Petersilie</td>
+      </tr>
+      <tr>
+        <td><span id="value17">2.5</span> ST Sellerieblatt</td>
+      </tr>
+      <tr>
+        <td><span id="value18">1.25</span> l Wasser</td>
+      </tr>
+      <tr>
+        <td><span id="value19">0.5</span> ST Ei</td>
+      </tr>
+      <tr>
+        <td><span id="value20">40</span>g Weizenmehl</td>
+      </tr>
+      <tr>
+        <td><span id="value21">0.5</span> TL Salz</td>
+      </tr>
+    </table>
+
+    <h2>Zubereitung</h2>
+
+    <div id="filters">
+      <div class="box">
+        <img src="img/icons/clock-regular.svg" alt="icon clock" />
+        <p>15 Min.</p>
+      </div>
+      <div class="box">
+        <img src="img/icons/clock-regular.svg" alt="icon clock" />
+        <p>Gesamtzeit ca. 195 Min.</p>
+      </div>
+    </div>
+
+    <div>
+      <p>
+        <i>Zubereiten der Suppe</i><br /><br /><br />
+        1. Die Zwiebeln in kleine Würfel schneiden. Das Fleisch abspülen,
+        trocken tupfen und in 2 cm große Würfel schneiden.
+        <br /><br />2. Das Fett erhitzen, die Zwiebel anbraten, dann beiseite
+        stellen, mit dem Paprika mischen, 1,5 dl Wasser hinzufügen und kochen,
+        bis das Wasser verdampft ist. <br /><br />3. Dann das Rindfleisch
+        hinzufügen und unter Rühren anbraten, bis es weiß wird. Mit Salz und
+        Pfeffer würzen, mit Kreuzkümmel bestreuen, den zerdrückten Knoblauch,
+        die gewürfelten Tomaten, die gewürfelte ganze Paprika und das
+        Lorbeerblatt hinzufügen. <br /><br />4. 90 Minuten zugedeckt in der
+        eigenen Brühe köcheln lassen. In der Zwischenzeit die Nudeln
+        zubereiten. <br /><br />5. Dann wird das Gemüse hinzugefügt:
+        gewürfelte Karotten und Rüben, gewürfelter Sellerie, Kartoffeln,
+        gehackte Petersilie und Selleriegrün sowie 2 l bis 2,5 l Wasser.
+        <br /><br />6. 50 Minuten zugedeckt weiter köcheln lassen. Die
+        vorbereiteten Nudeln hinzufügen und 10 Minuten kochen.
+        <br /><br /><br /><i>Zubereitung der Nudeln</i><br /><br /><br />
+
+        1. Die Mehl, Ei und Salz für den Teig für die Nudeln zusammenstellen.
+        <br /><br />2. Den Teig in kleine fingerdicke Stücke reißen.<br /><br /><br />
+      </p>
+    </div>
+
+    <h3>Rezept erstellt von</h3>
+
+    <div class="editor">
+      <img src="img/profile_marton.png" alt="" class="profile" />
+      <p>Márton</p>
+    </div>
+    <p>
+      <em>Du hast Fragen oder Anregungen zum Rezept? Dann freuen wir uns auf
+        Dein Feedback.</em>
+    </p>
+
+    <a class="button buttoncontact" href="contact.html">Kontaktiere uns! <img src="img/plane.svg"
+        alt="icon paper plane" /></a>
+  </main>
+  <div w3-include-html="templates/footer.html"></div>
+  <script src="script/script.js"></script>
+</body>
+
+</html>

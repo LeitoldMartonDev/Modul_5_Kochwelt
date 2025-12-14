@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezept des Tages | Kochwelt</title>
+  <link rel="icon" type="image/x-icon" href="img/logo_small.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body onload="includeHTML()">
+  <div w3-include-html="templates/header.html"></div>
+  <main class="recipe_main padding-left-right">
+    <h1>Salami-Oliven Pizza</h1>
+    <img class="main-img img_border8" src="img/salami-pizza.jpg" alt="Eine Pizza mit Salami und Oliven" />
+    <div id="filters">
+      <div class="box">
+        <img src="img/icons/clock-regular.svg" alt="icon clock" />
+        <p>30 Min.</p>
+      </div>
+      <div class="box">
+        <img src="img/icons/brain-solid.svg" alt="icon brain" />
+        <p>einfach</p>
+      </div>
+      <div class="box">
+        <img src="img/icons/calendar-alt-regular.svg" alt="icon calendar" />
+        <p>11.03.2024</p>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="ingredients">
+      <p>Zutaten für</p>
+
+      <input type="number" min="1" max="10" id="portions" value="1" />
+      <button class="button" onclick="calc()">Portionen</button>
+
+
+
+
+    </div>
+    <table id="table">
+      <tr>
+        <td><span id="value1">300</span> g Mehl</td>
+      </tr>
+      <tr>
+        <td><span id="value2">1</span> Päckchen Trockenhefe</td>
+      </tr>
+      <tr>
+        <td><span id="value3">1</span> TL Zucker</td>
+      </tr>
+      <tr>
+        <td><span id="value4">1</span> TL Salz</td>
+      </tr>
+      <tr>
+        <td><span id="value5">200</span> ml lauwarmes Wasser</td>
+      </tr>
+      <tr>
+        <td><span id="value6">2</span> EL Olivenöl</td>
+      </tr>
+      <tr>
+        <td>
+          <span id="value7">100</span> g Salami, in Scheiben geschnitten
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span id="value8">200</span> g Tomatensauce oder passierte Tomaten
+        </td>
+      </tr>
+      <tr>
+        <td>Frische Basilikumblätter (optional)</td>
+      </tr>
+      <tr>
+        <td>Olivenöl zum Beträufeln</td>
+      </tr>
+      <tr>
+        <td>Mozzarella-Käse, in Scheiben oder gerieben</td>
+      </tr>
+    </table>
+    <h2>Zubereitung</h2>
+    <div id="filters">
+      <div class="box">
+        <img src="img/icons/clock-regular.svg" alt="icon clock" />
+        <p>30 Min.</p>
+      </div>
+      <div class="box">
+        <img src="img/icons/clock-regular.svg" alt="icon clock" />
+        <p>Gesamtzeit ca. 90 Min.</p>
+      </div>
+    </div>
+    <div>
+      <p>
+        Für den Teig: Vermische Mehl, Trockenhefe, Zucker, Salz. Füge nach und
+        nach lauwarmes Wasser und Olivenöl hinzu. Lass den Teig eine Stunde
+        gehen. <br /><br />Heize den Ofen auf 220 Grad vor. Rolle den Teig aus
+        und verteile Tomatensauce, Mozzarella, Salami und Oliven darauf. Backe
+        die Pizza für 15-20 Minuten, bis der Rand goldbraun ist.
+        <br /><br />Garniere die fertige Pizza mit frischem Basilikum und
+        beträufle sie mit Olivenöl. Guten Appetit!
+      </p>
+    </div>
+    <h3>Rezept erstellt von</h3>
+    <div class="editor">
+      <img src="img/Felix.jpg" alt="" class="profile" />
+      <p>Felix</p>
+    </div>
+    <p>
+      <em>Du hast Fragen oder Anregungen zum Rezept? Dann freuen wir uns auf
+        Dein Feedback.</em>
+    </p>
+
+    <a class="button buttoncontact" href="contact.html">Kontaktiere uns! <img src="img/plane.svg"
+        alt="icon paper plane" /></a>
+  </main>
+  <div w3-include-html="templates/footer.html"></div>
+  <script src="script/script.js"></script>
+
+
+
+
+</body>
+
+</html>

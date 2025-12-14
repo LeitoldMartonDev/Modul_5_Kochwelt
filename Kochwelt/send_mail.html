@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochwelt | Nachricht versendet</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <script src="script/script.js"></script>
+
+
+  <link rel="icon" type="image/x-icon" href="img/logo_small.png" />
+</head>
+
+<body onload="includeHTML()">
+  <div w3-include-html="templates/header.html"></div>
+  <main class="sendmail_body padding-left-right">
+    <img class="paper_plane" src="img/paper_plane.png" alt="paper_plane" />
+    Dein Mail ist unterwegs! &#128578;
+    <a href="index.html" class="button_link">Zur Startseite</a>
+  </main>
+  <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>
